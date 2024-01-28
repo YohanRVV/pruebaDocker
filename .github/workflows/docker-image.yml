@@ -47,8 +47,8 @@ jobs:
       env:
         NEW_VERSION: ${{steps.version.outputs.version}}
       run: |
-        docker push -t yohanrvv18/docker-git-graph:$NEW_VERSION
-        docker push -t yohanrvv18/docker-git-graph:latest
+        docker push yohanrvv18/docker-git-graph:$NEW_VERSION
+        docker push yohanrvv18/docker-git-graph:latest
         
     
     # - name: Build the Docker image
